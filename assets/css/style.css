@@ -113,13 +113,27 @@ section .color:nth-child(3){
 .formulario .input input[type="submit"]{
     background: #fff;
     color: #666;
+    
     max-width: 100px;
     cursor: pointer;
     margin-bottom: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0, 0.2);
 }
+
+    
+
+
 .formulario .olvidar{
     padding: 5px;
     font-size: 13px;
     letter-spacing: 1px;
+    color: #fff;
 }
+.formulario .olvidar a{
+    color: #fff;
+    font-size: 13px;
+    letter-spacing: 1px;
+    
+}
+
 
