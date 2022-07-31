@@ -148,7 +148,7 @@ section .color:nth-child(3){
     background: rgba(255,255,255,0.2);
     border-radius: 10px;
     animation: animate 10s linear infinite;
-    animation-delay: calc(1s * var(--i));
+    animation-delay: calc(1s * var(--i)); 
 }
 @keyframes animate {
     0%,100%{
