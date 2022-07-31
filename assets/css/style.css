@@ -136,4 +136,62 @@ section .color:nth-child(3){
     
 }
 
+/*generacion de recuadros dinámicos */
+
+.box .fondo{
+    position: absolute;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 25px 45px rgba(0,0,0, 0.1);
+    border: 1px solid rgba(255,255,255,0.5);
+    border-right: 1px solid rgba(255,255,255,0.2);
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    background: rgba(255,255,255,0.2);
+    border-radius: 10px;
+    animation: animate 10s linear infinite;
+    animation-delay: calc(1s * var(--i));
+}
+@keyframes animate {
+    0%,100%{
+        transform: translateY(-40px);
+    }
+    50%{
+        transform: translateY(40px);
+    }
+    
+}
+
+.box .fondo:nth-child(1){
+    top: -50px;
+    width: 100px;
+    height: 100px;
+    right: -60px;
+}
+.box .fondo:nth-child(2){
+    top: -52px;
+    width: 50px;
+    height: 50px;
+    left: 0px;
+}
+ .box .fondo:nth-child(3){
+    bottom: 50px;
+    width: 80px;
+    height: 80px;
+    right: -60px;
+    z-index: 2;
+}
+.box .fondo:nth-child(4){
+    bottom: -80px;
+    width: 50px;
+    height: 50px;
+    left: -50px;
+}
+.box .fondo:nth-child(5){
+    top: 150px;
+    width: 120px;
+    height: 120px;
+    left: -100px;
+    z-index: 2;
+}
+
+
 
