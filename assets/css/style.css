@@ -1,75 +1,80 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
 
-body{
+body {
     overflow: hidden;
-    
+
 }
-section{
+
+section {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     background: linear-gradient(to bottom, #f1f4f9,
-    #dff1ff);
+            #dff1ff);
 }
 
-section .color{
+section .color {
     position: absolute;
     filter: blur(150px);
 }
 
-section .color:nth-child(1){
+section .color:nth-child(1) {
     top: -350px;
     width: 600px;
     height: 600px;
     background: #ff359b;
 }
-section .color:nth-child(2){
+
+section .color:nth-child(2) {
     bottom: -150px;
     left: 100px;
     width: 500px;
     height: 500px;
     background: #fffd87;
 }
-section .color:nth-child(3){
+
+section .color:nth-child(3) {
     bottom: 50px;
     right: 110px;
     width: 500px;
     height: 500px;
     background: #00d2ff;
 }
-.box{
+
+.box {
     position: relative;
 }
-.contenedor{
+
+.contenedor {
     position: relative;
     width: 400px;
     min-height: 400px;
-    background: rgba(255,255,255,0.1);
+    background: rgba(255, 255, 255, 0.1);
     border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     backdrop-filter: blur(5px);
-    box-shadow: 0 25px 45px rgba(0,0,0, 0.1);
-    border: 1px solid rgba(255,255,255,0.5);
-    border-right: 1px solid rgba(255,255,255,0.2);
-    border-bottom: 1px solid rgba(255,255,255,0.2);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-.formulario{
+.formulario {
     position: relative;
     widows: 100%;
     height: 100%;
     padding: 40px;
 }
 
-.formulario h2{
+.formulario h2 {
     position: relative;
     color: #fff;
     font-size: 24px;
@@ -78,7 +83,7 @@ section .color:nth-child(3){
     margin-bottom: 40px;
 }
 
-.formulario h2::before{
+.formulario h2::before {
     content: '';
     position: absolute;
     left: 0;
@@ -88,104 +93,117 @@ section .color:nth-child(3){
     background: #fff;
 
 }
-.formulario .input{
+
+.formulario .input {
     width: 100%;
     margin-top: 20px;
 }
-.formulario .input input{
+
+.formulario .input input {
     width: 100%;
-    background: rgba(255,255,255,0.2);
+    background: rgba(255, 255, 255, 0.2);
     border: none;
     outline: none;
     padding: 10px 20px;
     border-radius: 35px;
-    border: 1px solid rgba(255,255,255,0.5);
-    border-right: 1px solid rgba(255,255,255,0.2);
-    border-bottom: 1px solid rgba(255,255,255,0.2);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     font-size: 16px;
     letter-spacing: 1px;
     color: #fff;
-    box-shadow: 0 5px 15px rgba(0,0,0, 0.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
 }
-.formulario .input input::placeholder{
+
+.formulario .input input::placeholder {
     color: #fff;
 }
-.formulario .input input[type="submit"]{
+
+.formulario .input input[type="submit"] {
     background: #fff;
     color: #666;
-    
+
     max-width: 100px;
     cursor: pointer;
     margin-bottom: 20px;
-    box-shadow: 0 5px 15px rgba(0,0,0, 0.2);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-    
 
 
-.formulario .olvidar{
+
+.formulario .olvidar {
     padding: 5px;
     font-size: 13px;
     letter-spacing: 1px;
     color: #fff;
 }
-.formulario .olvidar a{
+
+.formulario .olvidar a {
     color: #fff;
     font-size: 13px;
     letter-spacing: 1px;
-    
+
 }
 
 /*generacion de recuadros dinámicos */
 
-.box .fondo{
+.box .fondo {
     position: absolute;
     backdrop-filter: blur(5px);
-    box-shadow: 0 25px 45px rgba(0,0,0, 0.1);
-    border: 1px solid rgba(255,255,255,0.5);
-    border-right: 1px solid rgba(255,255,255,0.2);
-    border-bottom: 1px solid rgba(255,255,255,0.2);
-    background: rgba(255,255,255,0.2);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.2);
     border-radius: 10px;
     animation: animate 10s linear infinite;
-    animation-delay: calc(1s * var(--i)); 
-}
-@keyframes animate {
-    0%,100%{
-        transform: translateY(-40px);
-    }
-    50%{
-        transform: translateY(40px);
-    }
-    
+    animation-delay: calc(1s * var(--i));
 }
 
-.box .fondo:nth-child(1){
+@keyframes animate {
+
+    0%,
+    100% {
+        transform: translateY(-40px);
+    }
+
+    50% {
+        transform: translateY(40px);
+    }
+
+}
+
+.box .fondo:nth-child(1) {
     top: -50px;
     width: 100px;
     height: 100px;
     right: -60px;
 }
-.box .fondo:nth-child(2){
+
+.box .fondo:nth-child(2) {
     top: -52px;
     width: 50px;
     height: 50px;
     left: 0px;
 }
- .box .fondo:nth-child(3){
+
+.box .fondo:nth-child(3) {
     bottom: 50px;
     width: 80px;
     height: 80px;
     right: -60px;
     z-index: 2;
 }
-.box .fondo:nth-child(4){
+
+.box .fondo:nth-child(4) {
     bottom: -80px;
     width: 50px;
     height: 50px;
     left: -50px;
 }
-.box .fondo:nth-child(5){
+
+.box .fondo:nth-child(5) {
     top: 150px;
     width: 120px;
     height: 120px;
@@ -193,5 +211,65 @@ section .color:nth-child(3){
     z-index: 2;
 }
 
+@media screen and (max-width: 420px) {
+    .contenedor {
+        position: relative;
+        width: 250px;
+        height: 125px;
+        display: flex;
+        justify-content: center;
 
+    }
 
+    .box .fondo {
+        border-radius: 50%;
+    }
+
+    .box .fondo:nth-child(1) {
+        display: none;
+    }
+
+    .box .fondo:nth-child(2) {
+        display: none;
+    }
+
+    .box .fondo:nth-child(3) {
+        display: none;
+    }
+
+    .box .fondo:nth-child(4) {
+        display: none;
+    }
+
+    .box .fondo:nth-child(5) {
+        top: -150px;
+        width: 500px;
+        height: 500px;
+        right: -50px;
+        z-index: 0;
+    }
+
+    @keyframes animate {
+
+        0%,
+        100% {
+            transform: translateY(-90px);
+        }
+
+        50% {
+            transform: translateY(40px);
+        }
+
+    }
+   .formulario h2{
+    font-size: 18px;
+    position: relative;
+    margin-bottom: 0px;
+   }
+   .formulario h2::before{
+    height: 2px;
+   }
+   .formulario .input input{
+    font-size: 16px;
+   }
+}
