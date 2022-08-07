@@ -220,7 +220,23 @@ section .color:nth-child(3) {
         justify-content: center;
 
     }
+    .box .fondo {
+        
+        animation: animate 50s linear infinite;
+        
+    }
+    /* @keyframes animate {
 
+        0%,
+        100% {
+            transform: translateY(-90px);
+        }
+
+        50% {
+            transform: translateY(40px);
+        }
+
+    } */
     .box .fondo {
         border-radius: 50%;
     }
@@ -245,26 +261,16 @@ section .color:nth-child(3) {
         top: -150px;
         width: 500px;
         height: 500px;
-        right: -50px;
+        right: -90px;
         z-index: 0;
     }
 
-    @keyframes animate {
 
-        0%,
-        100% {
-            transform: translateY(-90px);
-        }
-
-        50% {
-            transform: translateY(40px);
-        }
-
-    }
    .formulario h2{
     font-size: 18px;
     position: relative;
     margin-bottom: 0px;
+
    }
    .formulario h2::before{
     height: 2px;
